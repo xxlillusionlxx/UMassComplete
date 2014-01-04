@@ -1,0 +1,15 @@
+30 - North Amherst/Old Belchertown Road
+31 - Sunderland/South Amherst              
+32 - Puffers Pond/Atkins                   
+34 - Orchard Hill/Mullins Center/Campus Shuttle - Northbound
+35 - Orchard Hill/Mullins Center/Campus Shuttle - Southbound
+37 - Amity Shuttle                                 
+38 - Mount Holyoke/Hampshire/Amherst/UMass
+39 - Smith/Hampshire/Mount Holyoke
+39E - Express Smith/Mount Holyoke
+M40 - Minutement Express Northampton/Amherst
+B43 - Northampton/Hadley/Amherst
+B43 - No School/Summer Schedule
+45 - Belchertown Center/UMass      
+46 - UMass/South Deerfield                 
+B48 - Northampton/Veterans Park/Holyoke Mall
