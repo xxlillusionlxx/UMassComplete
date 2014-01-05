@@ -34,14 +34,14 @@ public class Restaurants extends Fragment {
 		}
         
         final ListView lv1 = (ListView) rootView.findViewById(R.id.ListView02);
-        lv1.setAdapter(new ListingBaseAdapter(container.getContext(), searchResults));
+        lv1.setAdapter(new ListingBaseAdapterTwo(container.getContext(), searchResults));
         
         lv1.setOnItemClickListener(new OnItemClickListener() {
          @Override
          public void onItemClick(AdapterView<?> a, View v, int position, long id) { 
           Object o = lv1.getItemAtPosition(position);
           SearchResults fullObject = (SearchResults)o;
-          Toast.makeText(lv1.getContext(), "You have chosen: " + " " + fullObject.getName(), Toast.LENGTH_LONG).show();
+          //Toast.makeText(lv1.getContext(), "You have chosen: " + " " + fullObject.getName(), Toast.LENGTH_LONG).show();
          }  
         });
         

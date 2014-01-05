@@ -27,7 +27,7 @@ public class FoodDelivery extends Fragment {
         
         ArrayList<SearchResults> searchResults = new ArrayList<SearchResults> ();
 		try {
-			searchResults = getDeliveryOffering();
+			searchResults = getDeliveryOfferings();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -51,34 +51,37 @@ public class FoodDelivery extends Fragment {
         return rootView;
     }
     
-    private ArrayList<SearchResults> getDeliveryOffering() throws IOException {
-     ArrayList<SearchResults> results = new ArrayList<SearchResults>();
-     InputStream is = this.getResources().openRawResource(R.raw.places);
-     BufferedReader d = new BufferedReader(new InputStreamReader(is));
-     String x;
-     int count = 0;
-     SearchResults sr1 = new SearchResults();
-     
-     while((x = d.readLine()) != null) {
-    	 
-    	 count++;
-    	 
-    	 if(count == 1) {
-    			 sr1.setName(x);
-    	 }
-    	 else if(count == 2) {
-    			 sr1.setStoreHours(x);
-    	 }
-    	 else {
-    			 sr1.setPhone(x);
-    			 results.add(sr1);
-    			 sr1 = new SearchResults();
-    			 count = 0;
-    	 }
+    private ArrayList<SearchResults> getDeliveryOfferings() throws IOException {
+    	ArrayList<SearchResults> results = new ArrayList<SearchResults>();
+        InputStream is = this.getResources().openRawResource(R.raw.places);
+        BufferedReader d = new BufferedReader(new InputStreamReader(is));
+        String x;
+        int count = 0;
+        SearchResults sr1 = new SearchResults();;
+        
+        while((x = d.readLine()) != null) {
+       	 count++;
+       	 if(x == "") {
+       		 continue;
+       	 }
+       	 else {
+       		 if(count == 1)
+       			 sr1.setName(x);
+       		 else if(count == 2)
+       			 sr1.setStoreHours(x);
+       		 else
+       			 sr1.setPhone(x);
+       	 }
+       	 
+       	 if(count == 3) {
+       		 results.add(sr1);
+       		 sr1 = new SearchResults();
+       		 count = 0;
+       	 }
 
-     }
-     d.close();
-     
-     return results;
+        }
+        d.close();
+        
+        return results;
     }
 }

@@ -36,41 +36,6 @@ public class NightlifeDisplay extends Activity {
 	        	 SearchResults fullObject = (SearchResults)o;
 	          
 	        	 System.out.println(fullObject.getName());
-	        	 if(fullObject.getName().equals("Stackers")) {
-	        		// View view = v.findViewById(R.layout.stackers);
-	        		 //Info info = new Info(position, id, v.getContext(), fullObject.getName(), view);
-	        		 Intent intent = new Intent(v.getContext(), BarDisplay.class);
-	        		// intent.putExtra("bam", info);
-	        		 startActivity(intent);
-	        	 }
-	        	 else if(fullObject.getName().equals("McMurphy's")) {
-	        		 Intent intent = new Intent(v.getContext(), Mcmurphys.class);
-	        		 startActivity(intent);
-	        	 }
-	        	 else if(fullObject.getName().equals("High Horse")) {
-	        		 Intent intent = new Intent(v.getContext(), HighHorse.class);
-	        		 startActivity(intent);
-	        	 }
-	        	 else if(fullObject.getName().equals("Monkey Bar")) {
-	        		 Intent intent = new Intent(v.getContext(), MonkeyBar.class);
-	        		 startActivity(intent);
-	        	 }
-	        	 else if(fullObject.getName().equals("Rafters")) {
-	        		 Intent intent = new Intent(v.getContext(), Rafters.class);
-	        		 startActivity(intent);
-	        	 }
-	        	 else if(fullObject.getName().equals("Amherst Brewing Company")) {
-	        		 Intent intent = new Intent(v.getContext(), ABC.class);
-	        		 startActivity(intent);
-	        	 }
-	        	 else if(fullObject.getName().equals("Moan and Dove")) {
-	        		 Intent intent = new Intent(v.getContext(), MoanDove.class);
-	        		 startActivity(intent);
-	        	 }
-	        	 else {
-	        		 Intent intent = new Intent(v.getContext(), TheSpoke.class);
-	        		 startActivity(intent);
-	        	 }
 	        	 
 	          
 	         }  

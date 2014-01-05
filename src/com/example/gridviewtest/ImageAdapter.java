@@ -1,11 +1,12 @@
 package com.example.gridviewtest;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
@@ -28,18 +29,34 @@ public class ImageAdapter extends BaseAdapter {
 
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
-        ImageView imageView;
+    	View view = convertView;
+        ViewHolder vh = new ViewHolder();
+        
         if (convertView == null) {  // if it's not recycled, initialize some attributes
-            imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(150, 150));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setPadding(8, 8, 8, 8);
+        	
+        	LayoutInflater inflater = (LayoutInflater) mContext.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
+        	view = inflater.inflate(R.layout.txt_under_img, parent, false);
+        	vh.imgV = (ImageView) view.findViewById(R.id.image);
+            vh.imgV.setPadding(8, 8, 8, 8);
+            vh.txt = (TextView) view.findViewById(R.id.img_text);
+            
+            view.setTag(vh);
         } else {
-            imageView = (ImageView) convertView;
+            vh = (ViewHolder) convertView.getTag();
         }
-
-        imageView.setImageResource(mThumbIds[position]);
-        return imageView;
+        switch(position) {
+        case 0:
+        	vh.txt.setText("Food"); break;
+        case 1: 
+        	vh.txt.setText("Bus Schedules"); break;
+        case 2: 
+        	vh.txt.setText("Night Life"); break;
+        case 3:
+        	vh.txt.setText("Cabs"); break;
+        }
+        
+        vh.imgV.setImageResource(mThumbIds[position]);
+        return view;
     }
 
     // references to our images
@@ -47,4 +64,9 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.pizza, R.drawable.bus,
             R.drawable.beer, R.drawable.taxi
     };
+    
+    static class ViewHolder {
+    	ImageView imgV;
+    	TextView txt;
+    }
 }
