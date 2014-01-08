@@ -1,9 +1,9 @@
 Arizona Pizza Company
 367 Russell Street Hadley, MA 01035
 413-582-0400
-Hillside Pizza
-173 Russell St., Rt 9 Hadley, MA 01035
-413-549-0077
+Antonios Pizza
+31 N Pleasant St, Amherst, MA 01002
+413-253-0808
 The Hanger
 55 University Dr. Amherst, MA 01002
 413-549-9461
@@ -31,6 +31,9 @@ Ginger Garden
 Lime Red Teahouse
 50 Main St., Amherst, MA 01002
 413-200-8327
+Miss Saigon
+96 N Pleasant St., Amherst, MA 01002
+413-253-9988
 Wing Wong
 206 Russell St, Hadley, MA 01035
 413-584-4488
@@ -61,6 +64,9 @@ Subway
 J. Gumbo's
 19 N. Pleasant St. Amherst, MA 01002
 413-835-0681
+Hillside Pizza
+173 Russell St., Rt 9 Hadley, MA 01035
+413-549-0077
 Judies
 51 N. Pleasant St. Amherst, MA 01002
 413-549-0077

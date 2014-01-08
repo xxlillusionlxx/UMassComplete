@@ -69,11 +69,13 @@ public class FoodDelivery extends Fragment {
        			 sr1.setName(x);
        		 else if(count == 2)
        			 sr1.setStoreHours(x);
+       		 else if(count == 3)
+       			 sr1.setStoreHoursTwo(x);
        		 else
        			 sr1.setPhone(x);
        	 }
        	 
-       	 if(count == 3) {
+       	 if(count == 4) {
        		 results.add(sr1);
        		 sr1 = new SearchResults();
        		 count = 0;

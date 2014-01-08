@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 
@@ -39,8 +38,8 @@ public class Restaurants extends Fragment {
         lv1.setOnItemClickListener(new OnItemClickListener() {
          @Override
          public void onItemClick(AdapterView<?> a, View v, int position, long id) { 
-          Object o = lv1.getItemAtPosition(position);
-          SearchResults fullObject = (SearchResults)o;
+          //Object o = lv1.getItemAtPosition(position);
+          //SearchResults fullObject = (SearchResults)o;
           //Toast.makeText(lv1.getContext(), "You have chosen: " + " " + fullObject.getName(), Toast.LENGTH_LONG).show();
          }  
         });

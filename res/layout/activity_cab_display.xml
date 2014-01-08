@@ -18,7 +18,6 @@
    	android:id="@+id/ListView03" 
    	android:layout_height="wrap_content"
    	android:fadeScrollbars="true"
-   	android:layout_width="fill_parent"
-   	android:layout_centerHorizontal="true" />
+   	android:layout_width="fill_parent" />
 
 </RelativeLayout>

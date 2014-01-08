@@ -21,63 +21,48 @@ public class BusScheduleDisplay extends Activity {
 		
 		switch(id) {
 			case 0:
-				//tImg.setImageResource(R.drawable.g30);
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.g30, 512, 384));
 				break;
 			case 1:
-				//tImg.setImageResource(R.drawable.p31); 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.p31, 512, 384));
 				break;
-			case 2:
-				//tImg.setImageResource(R.drawable.g32); 
+			case 2: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.g32, 512, 384));
 				break;
 			case 3:
-				//tImg.setImageResource(R.drawable.b34); 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.b34, 512, 384));
 				break;
-			case 4:
-				//tImg.setImageResource(R.drawable.b35); 
+			case 4: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.b35, 512, 384));
 				break;
 			case 5:
-				//tImg.setImageResource(R.drawable.b37); 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.b37, 512, 384));
 				break;
-			case 6:
-				//tImg.setImageResource(R.drawable.o38); 
+			case 6: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.o38, 512, 384));
 				break;
-			case 7:
-				//tImg.setImageResource(R.drawable.o39); 
+			case 7: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.o39, 512, 384));
 				break;
-			case 8:
-				//tImg.setImageResource(R.drawable.o39e); 
+			case 8: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.o39e, 512, 384));
 				break;
-			case 9:
-				//tImg.setImageResource(R.drawable.m40); 
+			case 9: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.m40, 512, 384));
 				break;
 			case 10:
-				//tImg.setImageResource(R.drawable.b43);
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.b43, 512, 384));
 				break;
 			case 11:
-				//tImg.setImageResource(R.drawable.b43summer); 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.b43summer, 512, 384));
 				break;
 			case 12:
-				//tImg.setImageResource(R.drawable.g45); 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.g45, 512, 384));
 				break;
-			case 13:
-				//tImg.setImageResource(R.drawable.g46); 
+			case 13: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.g46, 512, 384));
 				break;
-			case 14:
-				//tImg.setImageResource(R.drawable.b48); 
+			case 14: 
 				tImg.setImageBitmap( decodeSampledBitmapFromResource(getResources(), R.drawable.b48, 512, 384));	
 				break;
 				

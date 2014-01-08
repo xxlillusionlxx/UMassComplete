@@ -27,29 +27,39 @@ public class MainActivity extends Activity {
 		
 	    grid.setOnItemClickListener(new OnItemClickListener() {
 	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {	        	
-	        	if(position == 0) {
-	        		//info = new Info(position, id, v.getContext(), "food", v);
+	        	switch(position) {
+	        	case 0:
 	        		intent = new Intent(MainActivity.this, DisplayInfo.class);
-	        		//intent.putExtra(EXTRA_MESSAGE, info);
 	        		startActivity(intent);
-	        	}
-	        	else if(position == 1) {
-	        		//info = new Info(position, id, v.getContext(), "bus", v);
+	        		break;     	
+	        	case 1:
 	        		intent = new Intent(MainActivity.this, BusDisplay.class);
-	        		//intent.putExtra(EXTRA_MESSAGE, info);
 	        		startActivity(intent);
-	        	}
-	        	else if(position == 2){
-	        		//info = new Info(position, id, v.getContext(), "night", v);
+	        		break;
+	        	case 2:
 	        		intent = new Intent(MainActivity.this, NightlifeDisplay.class);
-	        		//intent.putExtra(EXTRA_MESSAGE, info);
 	        		startActivity(intent);	
-	        	}
-	        	else {
-	        		//info = new Info(position, id, v.getContext(), "cab", v);
+	        		break;
+	        	case 3:
 	        		intent = new Intent(MainActivity.this, CabDisplay.class);
-	        		//intent.putExtra(EXTRA_MESSAGE, info);
 	        		startActivity(intent);
+	        		break;
+	        	case 4:
+	        		intent = new Intent(MainActivity.this, MailActivity.class);
+	        		startActivity(intent);
+	        		break;
+	        	case 5:
+	        		intent = new Intent(MainActivity.this, SpireActivity.class);
+	        		startActivity(intent);
+	        		break;
+	        	case 6:
+	        		intent = new Intent(MainActivity.this, MoodleActivity.class);
+	        		startActivity(intent);
+	        		break;
+	        	case 7:
+	        		intent = new Intent(MainActivity.this, CampusMapActivity.class);
+	        		startActivity(intent);
+	        		break;
 	        	}
 	        	
 	        }

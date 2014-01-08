@@ -29,5 +29,9 @@
     <string name="bustext">Note: These are the most current schedules as of January 4, 2014. They\'re effective throughout the school year. Vist the <a href="http://www.pvta.com">PVTA</a> website for the most up-to-date information regarding weather conditions and route changes.</string>
     <string name="title_activity_bus_schedule_display">Schedule Display</string>
     <string name="title_activity_listing_base_adapter_two">ListingBaseAdapterTwo</string>
+    <string name="title_activity_spire">SpireActivity</string>
+    <string name="title_activity_mail">MailActivity</string>
+    <string name="title_activity_moodle">MoodleActivity</string>
+    <string name="title_activity_campus_map">CampusMapActivity</string>
 
 </resources>

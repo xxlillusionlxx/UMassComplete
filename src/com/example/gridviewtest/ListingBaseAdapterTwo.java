@@ -38,13 +38,14 @@ public class ListingBaseAdapterTwo extends BaseAdapter {
 	   holder = new ViewHolder();
 	   holder.txtName = (TextView) convertView.findViewById(R.id.name);
 	   holder.txtStoreHours = (TextView) convertView.findViewById(R.id.storeHours);
+	   holder.txtStoreHoursTwo = (TextView) convertView.findViewById(R.id.storeHoursTwo);
 	   holder.txtPhone = (TextView) convertView.findViewById(R.id.phone);
 
 	   convertView.setTag(holder);
 	  } else {
 	   holder = (ViewHolder) convertView.getTag();
 	  }
-	  
+	  holder.txtStoreHoursTwo.setVisibility(holder.txtStoreHoursTwo.GONE);
 	  holder.txtName.setText(searchArrayList.get(position).getName());
 	  holder.txtStoreHours.setText(searchArrayList.get(position).getStoreHours());
 	  holder.txtPhone.setText(searchArrayList.get(position).getPhone());
@@ -55,6 +56,7 @@ public class ListingBaseAdapterTwo extends BaseAdapter {
 	 static class ViewHolder {
 	  TextView txtName;
 	  TextView txtStoreHours;
+	  TextView txtStoreHoursTwo;
 	  TextView txtPhone;
 	 }
 	}

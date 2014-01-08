@@ -53,6 +53,14 @@ public class ImageAdapter extends BaseAdapter {
         	vh.txt.setText("Night Life"); break;
         case 3:
         	vh.txt.setText("Cabs"); break;
+        case 4:
+        	vh.txt.setText("UMail"); break;
+        case 5:
+        	vh.txt.setText("Spire"); break;
+        case 6:
+        	vh.txt.setText("Moodle"); break;
+        case 7:
+        	vh.txt.setText("Campus Map"); break;
         }
         
         vh.imgV.setImageResource(mThumbIds[position]);
@@ -62,7 +70,9 @@ public class ImageAdapter extends BaseAdapter {
     // references to our images
     private Integer[] mThumbIds = {
             R.drawable.pizza, R.drawable.bus,
-            R.drawable.beer, R.drawable.taxi
+            R.drawable.beer, R.drawable.taxi,
+            R.drawable.mail_icon, R.drawable.spire_icon,
+            R.drawable.moodle_icon, R.drawable.map_icon
     };
     
     static class ViewHolder {
