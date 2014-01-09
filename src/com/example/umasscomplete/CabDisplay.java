@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -72,4 +74,19 @@ while((x = d.readLine()) != null) {
      
      return results;
     }
+    
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.cab_display, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    		ExecDialog.runDialog(this);
+		
+	            return super.onOptionsItemSelected(item);
+	    }
 }

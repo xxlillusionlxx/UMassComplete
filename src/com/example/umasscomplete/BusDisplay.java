@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,6 +10,8 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -98,5 +100,20 @@ public class BusDisplay extends ListActivity  {
 	     
 		return results;
 	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.bus_display, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    		ExecDialog.runDialog(this);
+		
+	            return super.onOptionsItemSelected(item);
+	    }
     
 }

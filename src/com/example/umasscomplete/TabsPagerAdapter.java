@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

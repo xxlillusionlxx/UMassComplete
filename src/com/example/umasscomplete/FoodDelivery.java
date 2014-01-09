@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,7 +23,7 @@ public class FoodDelivery extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.delivery_food, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_food_delivery, container, false);
         
         ArrayList<SearchResults> searchResults = new ArrayList<SearchResults> ();
 		try {

@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import android.app.Activity;
 import android.os.Bundle;

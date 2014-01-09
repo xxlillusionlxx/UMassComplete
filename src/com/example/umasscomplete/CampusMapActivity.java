@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.touch.TouchImageView;
 
@@ -67,5 +68,14 @@ public class CampusMapActivity extends Activity {
 		getMenuInflater().inflate(R.menu.campus_map, menu);
 		return true;
 	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle presses on the action bar items
+	    		ExecDialog.runDialog(this);
+		
+	            return super.onOptionsItemSelected(item);
+	    }
 
 }
+

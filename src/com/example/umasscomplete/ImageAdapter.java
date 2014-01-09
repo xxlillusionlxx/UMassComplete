@@ -1,4 +1,4 @@
-package com.example.gridviewtest;
+package com.example.umasscomplete;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -35,7 +35,7 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {  // if it's not recycled, initialize some attributes
         	
         	LayoutInflater inflater = (LayoutInflater) mContext.getSystemService( Context.LAYOUT_INFLATER_SERVICE );
-        	view = inflater.inflate(R.layout.txt_under_img, parent, false);
+        	view = inflater.inflate(R.layout.text_under_img, parent, false);
         	vh.imgV = (ImageView) view.findViewById(R.id.image);
             vh.imgV.setPadding(8, 8, 8, 8);
             vh.txt = (TextView) view.findViewById(R.id.img_text);
