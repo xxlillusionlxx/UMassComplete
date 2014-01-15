@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food"
+    android:background="#1C1C1C" >
+
+	<android.support.v4.view.ViewPager
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/pager"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true" >
+	</android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

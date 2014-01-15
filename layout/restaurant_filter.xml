@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+ 
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/restaurant_search_hint" >
+         <requestFocus />
+    </EditText>
+ 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_height="wrap_content"
+   		android:fadeScrollbars="true"
+   		android:layout_width="fill_parent"
+   		android:paddingLeft="20dp"
+   		android:paddingTop="10dp"
+   		android:divider="@android:color/transparent"
+  		android:dividerHeight="10.0dp"
+  		android:layout_below="@id/search"
+  		android:scrollbars="none"  />
+ 
+</RelativeLayout>

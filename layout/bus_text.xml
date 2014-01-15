@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical" 
+ android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <TextView android:id="@+id/bus_item"
+  android:textSize="20sp"  
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:textColor="#FAFAFA"
+  android:padding="8dp"
+  android:background="@drawable/bluebutton"
+  android:shadowColor="#1C1C1C"
+  android:shadowDx="2.2"
+  android:shadowDy="2.5"
+  android:shadowRadius="2.5"/>
+ 
+</LinearLayout>
