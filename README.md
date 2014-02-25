@@ -1,4 +1,3 @@
-
 UMassComplete
 =============
 
@@ -19,7 +18,7 @@ APP FEATURES (As of 1/21/14)
   Delivery Food Listings - each listing includes hours of operation as well as their phone number. <br>
   Cab Listings - each listing includes hours of operation as well as their phone number. <br>
   Bus Schedules - click on the schedule you want, it brings you to a zoomable image of the schedule. Everything available   offline for anyone who keeps 3G/WiFi off to save battery <br>
-  Restaurant Listings - each listing includes the restaurant name, location, and phone number
+  Restaurant Listings - each listing includes the restaurant name, location, and phone number<br>
   Listing for best bathrooms on campus<br>
   Links to the most used UMass resources: Spire, UMail, and Moodle <br>
   Link to UMass Reddit<br>
