@@ -31,9 +31,6 @@ public class RestaurantFilter extends Fragment {
     ListView list;
     ListViewAdapter adapter;
     EditText editsearch;
-    String[] rank;
-    String[] country;
-    String[] population;
     ArrayList<SearchResults> arraylist = new ArrayList<SearchResults>();
 
 	@Override
