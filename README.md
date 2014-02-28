@@ -5,11 +5,11 @@ Resources Used:
 <BLOCKQUOTE>
   <p>TouchImageView package Mike Ortiz (https://github.com/MikeOrtiz) </p>
     
-  <p>Code for GridView, Tabs, and ListView mostly taken from Google's developer tutorials and documentation, and<br> then  adapted for particular usage when needed </p>
+  <p>Google's documentation and developer tutorials were a huge help in creating the GridView, Tabs, and ListView screens. Adapted their code samples to what I needed. </p>
 
- <p>Icons for Bus Schedules, Bathrooms, Reddit, Nightlife, and Food are from Find Icons (www.findicons.com)</p>
+ <p>Icons for Bus, Bathrooms, Reddit, Nightlife, and Food are from Find Icons (www.findicons.com), and can be searched with those names</p>
   
-  <p>Logos are for moodle, umail, and spire taken from their respective websites, and then made into icons with the use of photoshop</p></BLOCKQUOTE>
+  <p>Logos for Moodle, UMail, and Spire taken from their respective websites, and then made into icons with the use of photoshop</p></BLOCKQUOTE>
   
   
 APP FEATURES (As of 1/21/14)
